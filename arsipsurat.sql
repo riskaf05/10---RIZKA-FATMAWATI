@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Nov 2022 pada 05.13
--- Versi server: 10.4.25-MariaDB
--- Versi PHP: 8.1.10
+-- Generation Time: Nov 09, 2022 at 05:07 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `surat`
+-- Table structure for table `surat`
 --
 
 CREATE TABLE `surat` (
@@ -37,32 +37,34 @@ CREATE TABLE `surat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `surat`
+-- Dumping data for table `surat`
 --
 
 INSERT INTO `surat` (`id`, `nomorsurat`, `kategori`, `judul`, `waktu`, `file`) VALUES
-(20, '2022/PD3/TU/002', 'Pemberitahuan', 'Sosialisasi Tugas Akhir', '2022-11-08 10:44:43', 'file_20.pdf'),
-(21, '2022/PD3/TU/004', 'Pemberitahuan', 'Praktek Lsp', '2022-11-08 10:45:35', 'file_21.pdf');
+(24, '2020/PD2/TU/022', 'Undangan', 'Undangan Halal Bi Halal', '2021-04-21 18:23:00', 'file_24.pdf'),
+(25, '2020/PD3/TU/001', 'Pemberitahuan', 'Nota Dinas WFH', '2021-06-21 17:23:00', 'file_25.pdf'),
+(33, '2022/PD0/003', 'Pemberitahuan', 'Pemberitahuan Nota Dinas 2022', '2022-11-09 10:55:56', 'file_33.pdf'),
+(34, '2022/PD5/006', 'Surat Arsip', 'Proyek 2', '2022-11-09 10:59:08', 'file_34.pdf');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `surat`
+-- Indexes for table `surat`
 --
 ALTER TABLE `surat`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `surat`
+-- AUTO_INCREMENT for table `surat`
 --
 ALTER TABLE `surat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
